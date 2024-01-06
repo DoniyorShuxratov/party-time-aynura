@@ -1,0 +1,58 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.nav__navigation {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav__navigation ul, li {
+    list-style: none;
+}
+
+.nav__navigation > button {
+    font-weight: 700;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.humbergur--menu svg {
+    width: 25px;
+    height: 25px;
+}
+.humbergur--menu path {
+    fill: var(--white)!important;
+}
+
+.hamb--btn {
+    display: none;
+}
+
+.nav__navigation--flexed {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    gap: 50px;
+    z-index: 500;
+    background: #00000039;
+    backdrop-filter: blur(25px);
+    padding: 50px 25px;
+}
+.nav__navigation--flexed > .nav__list {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}

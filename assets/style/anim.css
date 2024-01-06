@@ -1,0 +1,29 @@
+.op {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: all 1s ease;
+}
+
+.op-d{
+    opacity: 0;
+    transform: translatey(120px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.s-1 {
+    transition: all 1.2s ease;
+}
+
+.s-2 {
+    transition: all 1.5s ease;
+}
+
+.s-3 {
+    transition: all 1.8s ease;
+
+}

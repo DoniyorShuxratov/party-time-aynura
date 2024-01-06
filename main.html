@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav--section">
+            <div class="container">
+                <div class="nav">
+                    <div class="nav__logo">
+                        <a href=""><img src="./assets/img/Logo.svg" alt=""></a>
+                    </div>
+                    <div class="nav__navigation">
+                        <ul class="nav__list hideFlexNav">
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#store">Store</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <button class="hideFlexNav">Connect Wallet</button>
+                        <a onclick=showSidebar() class="humbergur--menu hamb--btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z" fill="#000000" opacity="1" data-original="#000000"/></g></svg></a>
+                    </div>
+                    <div class="nav__navigation--flexed">
+                        <a onclick=hideSidebar() class="humbergur--menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" d="M18.807 6.607a1 1 0 0 0-1.414-1.414L12 10.586 6.607 5.193a1 1 0 1 0-1.414 1.414L10.586 12l-5.393 5.393a1 1 0 1 0 1.414 1.414L12 13.414l5.393 5.393a1 1 0 0 0 1.414-1.414L13.414 12z" opacity="1" data-original="#000000" class=""/></g></svg></a>
+                        <ul class="nav__list">
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#store">Store</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <button>Connect Wallet</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero--section">
+        <div class="container">
+            <div class="hero">
+                <div class="hero__text">
+                    <h1 class="op">Best <span>PARTY</span> <br>Organizers </h1>
+                    <p class="op s-2">We are creating your party’s even for FREE </p>
+                    <button class="btn op s-3">SEE HOW?</button>
+                    <div class="hero__text--statistic">
+                        <div class="statistic op-d s-1">
+                            <h2>32K+</h2>
+                            <p>Party</p>
+                        </div>
+                        <div class="statistic op-d s-2">
+                            <h2>32K+</h2>
+                            <p>Events</p>
+                        </div>
+                        <div class="statistic op-d s-3">
+                            <h2>32K+</h2>
+                            <p>Weddings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__cards">
+                    <div class="card op-d s-2">
+                        <div class="card__img">
+                            <img src="./assets/img/card_1.png" alt="">
+                        </div>
+                        <div class="card__sub">
+                            <div class="card__sub--top">
+                                <div class="card-user--name">
+                                    <img src="./assets/img/user_1.jpg" alt="">
+                                    <div class="user--name-p">
+                                        <p>Laura</p>
+                                        <p>0.21 Weth</p>
+                                    </div>
+                                </div>
+                                <div class="card-user--detal">
+                                    <p>Organisation of</p>
+                                    <p><b>Birthday party</b></p>
+                                </div>
+                            </div>
+                            <div class="card__sub--bottom">
+                                <div class="card-user--price">
+                                    <p>Price:</p>
+                                    <p><b>$200</b></p>
+                                </div>
+                                <div class="card-user--btn">
+                                    <button class="btn">Get it</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card op s-1">
+                        <div class="card__img">
+                            <img src="./assets/img/card_2.png" alt="">
+                        </div>
+                        <div class="card__sub">
+                            <div class="card__sub--top">
+                                <div class="card-user--name">
+                                    <img src="./assets/img/user_1.jpg" alt="">
+                                    <div class="user--name-p">
+                                        <p>Laura</p>
+                                        <p>0.21 Weth</p>
+                                    </div>
+                                </div>
+                                <div class="card-user--detal">
+                                    <p>Organisation of</p>
+                                    <p><b>Birthday party</b></p>
+                                </div>
+                            </div>
+                            <div class="card__sub--bottom">
+                                <div class="card-user--price">
+                                    <p>Price:</p>
+                                    <p><b>$150</b></p>
+                                </div>
+                                <div class="card-user--btn">
+                                    <button class="btn">Get it</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

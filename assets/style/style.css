@@ -1,0 +1,240 @@
+@import url(./components/navbar.css);
+@import url(anim.css);
+@import url(flex.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-shade);
+    color: var(--white);
+}
+
+h1{
+    color: var(--light, var(--white));
+    font-family: 'Sora';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 90px */
+    text-transform: capitalize;
+}
+
+h2{
+    color: var(--light, var(--white));
+    font-family: 'Sora';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 90px */
+    text-transform: capitalize;
+}
+h3{
+    color: var(--light, var(--white));
+    font-family: 'Sora';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 90px */
+    text-transform: capitalize;
+}
+
+p{
+    color: var(--light, var(--white));
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.288px;
+}
+
+ul, li {
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+button {
+    border: none;
+    color: var(--bg-shade);
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 3.333px;
+    font-family: 'Sora';
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    transform: translateY(-5%);
+    box-shadow: var(--pink-oppocite) 0px 7px 29px 0px;
+}
+
+:root {
+    --bg-shade: #0D0B0C;
+    --pink: #DD24E1; 
+    --blue: #5117F4;
+    --white: #FFFFFF;
+    --pink-oppocite: #de24e16e;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* hero section style */
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.hero__text::after {
+    content: '';
+    width: 655.777px;
+    height: 511.766px;
+    transform: rotate(-0.25deg);
+    flex-shrink: 0;
+    background: rgba(202, 34, 227, 0.22);
+    filter: blur(225px);
+    position: absolute;
+    top: 0;
+    z-index: -500;
+}
+
+.hero__text span {
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Sora;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: capitalize;
+}
+
+.hero__text button {
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+    color: var(--white);
+    font-weight: bold;
+}
+
+.hero__text--statistic {
+    display: flex;
+    gap: 50px;
+}
+
+.statistic h2{
+    font-weight: bold;
+}
+.hero__cards {
+    position: relative;
+    transition: all .5s ease;
+}
+
+.hero__cards:hover {
+    transform: rotate(4deg);
+ 
+}
+
+.hero__cards::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -500;
+    width: 350px;
+    height: 500px;
+    transform: rotate(-0.25deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+    filter: blur(80px);
+}
+
+.hero__cards .card:nth-child(2) {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    transform: rotate(-20deg);
+    z-index: -1;
+}
+
+.card {
+    width: 300px;
+}
+.card__img {
+    height: 300px;
+}
+.card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card__sub {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.20) 100%);
+    backdrop-filter: blur(25px);
+}
+.card__sub p {
+    font-size: 11px;
+}
+.card__sub--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card-user--name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-user--name img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.card-user--detal {
+    width: 50%;
+}
+
+.card__sub--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-user--btn {
+    width: 50%;
+}
+.card-user--btn > button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 40px;
+}

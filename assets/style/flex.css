@@ -1,0 +1,48 @@
+@media(max-width: 760px) {
+
+    h1{
+        font-size: 38px!important;
+    }
+    h2{
+        font-size: 24px!important;
+    }
+    p, a {
+        font-size: 16px!important;
+    }
+    .container {
+        width: 350px!important;
+    }
+    .hideFlexNav{
+        display: none;
+    }
+    .hamb--btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .hero__text {
+        align-items: center!important;
+        text-align: center;
+        gap: 25px!important;
+    }
+    .hero__text span {
+        font-size: 38px!important;
+    }
+    .hero__text--statistic {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px!important;
+    }
+    .card {
+        width: 330px!important;
+    }
+    .hero__text::after {
+        width: 330px!important;
+    }
+    .hero__cards::after {
+        width: 330px!important;
+    }
+}
