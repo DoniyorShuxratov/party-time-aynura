@@ -10,10 +10,6 @@
     align-items: center;
 }
 
-.nav__navigation ul, li {
-    list-style: none;
-}
-
 .nav__navigation > button {
     font-weight: 700;
 }

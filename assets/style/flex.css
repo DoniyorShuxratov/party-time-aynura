@@ -6,8 +6,14 @@
     h2{
         font-size: 24px!important;
     }
+    h4{
+        font-size: 24px!important;
+    }
     p, a {
         font-size: 16px!important;
+    }
+    .section--title {
+        width: 100%!important;
     }
     .container {
         width: 350px!important;
@@ -36,13 +42,33 @@
         justify-content: space-between;
         gap: 25px!important;
     }
+    .numb-count pre {
+        font-size: 24px!important;
+    }
     .card {
         width: 330px!important;
+    }
+    .packages {
+        flex-direction: column;
+        gap: 25px!important;
+    }
+    .lists {
+        flex-direction: column;
+        gap: 25px!important;
     }
     .hero__text::after {
         width: 330px!important;
     }
     .hero__cards::after {
         width: 330px!important;
+    }
+    .packages::after{
+        width: 350px!important;
+    }
+    .lists__right::after {
+        width: 250px!important;
+    }
+    .lists__left::after {
+        width: 100px!important;
     }
 }

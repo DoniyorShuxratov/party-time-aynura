@@ -42,17 +42,38 @@ h3{
     text-transform: capitalize;
 }
 
+h4{
+    color: var(--light, var(--white));
+    font-family: Sora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 54px */
+    letter-spacing: 0.2px;
+}
+
+h5{
+    color: var(--light, var(--white));
+    font-family: Sora;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 28px */
+    letter-spacing: 0.448px;
+}
+
 p{
     color: var(--light, var(--white));
     font-family: 'Poppins';
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: normal;
     letter-spacing: 0.288px;
 }
 
 ul, li {
+    list-style: none;
     font-family: 'Poppins';
 }
 
@@ -75,6 +96,9 @@ button {
     font-family: 'Sora';
     font-size: 18px;
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 button:hover{
@@ -93,6 +117,17 @@ button:hover{
 .container{
     width: 1200px;
     margin: 0 auto;
+}
+
+section {
+    padding: 25px 0;
+}
+
+.section--title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 /* hero section style */
@@ -182,6 +217,21 @@ button:hover{
     transform: rotate(-20deg);
     z-index: -1;
 }
+.numb-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.numb-count pre {
+    color: var(--light, var(--white));
+    font-family: 'Sora';
+    font-size: 48px;
+    font-style: normal;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 125%; /* 90px */
+    text-transform: capitalize;
+}
 
 .card {
     width: 300px;
@@ -237,4 +287,136 @@ button:hover{
     font-size: 14px;
     font-weight: bold;
     padding: 8px 40px;
+}
+
+/* packages--section */
+
+.packages--section {
+    margin-top: 100px;
+}
+
+.packages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.packages::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -500;
+    width: 850px;
+    height: 700px;
+    transform: rotate(-0.25deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+    filter: blur(80px);
+}
+
+.package {
+    border-radius: 12.3px;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.20) 100%);
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+.pc-mid {
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+}
+.package__paragraph {
+    padding-left: 10px;
+}
+.package__paragraph li{
+    list-style: disc;
+}
+
+/* lists--section */
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.list {
+    cursor: pointer;
+}
+
+.list:hover {
+    transform: translateY(-2%);
+}
+
+.list__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.list__head--txt h5, pre, a{
+    font-family: 'Poppins';
+}
+
+.list__head--txt pre {
+    font-size: 12px;
+    color: var(--pink);
+}
+
+.lists__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 120px;
+    position: relative;
+}
+
+.lists__left::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -500;
+    width: 500px;
+    height: 700px;
+    transform: rotate(-0.25deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+    filter: blur(80px);
+}
+
+.lists__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.lists__right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -500;
+    width: 500px;
+    height: 700px;
+    transform: rotate(-0.25deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--pink), var(--blue));
+    filter: blur(80px);
+}
+
+.list__img > img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 30.333px;
 }
